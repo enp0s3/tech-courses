@@ -42,3 +42,13 @@ When explicitly asked to publish:
 5. Report the commit hash and repository URL.
 
 Do not alter unrelated courses.
+
+## GitHub publishing boundary
+
+This repository is the only authorized GitHub destination.
+
+Do not add remotes, push to a different repository, create releases, modify GitHub
+Actions, alter repository settings, or create pull requests.
+
+Commit and push only when the user explicitly requests publication.
+Push only to `origin/main`.
