@@ -1,0 +1,23 @@
+# Glossary
+
+- **Active memory:** A host-kernel measure of pages recently used; it is node-wide in this case study.
+- **Bandwidth:** Amount of data transferred per unit time, such as MiB/s.
+- **Cold page / cold access:** A page not recently accessed, or a first access that may require the system to load or restore its contents.
+- **Direct I/O:** A non-buffered file I/O mode, commonly using O_DIRECT. It can bypass normal page-cache behavior for supported I/O paths.
+- **fio:** Flexible I/O Tester, a workload generator that can measure I/O latency and throughput.
+- **Guest:** The operating system running inside a virtual machine.
+- **Host:** The physical worker node and its operating system, which runs the VM process.
+- **KVM/QEMU:** Kernel-based Virtual Machine provides Linux virtualization support; QEMU is the process that runs the virtual machine.
+- **Major page fault:** A page fault that requires I/O to make a page available.
+- **mmap:** A system call that maps a file or memory object into a process address space.
+- **NVMe swap:** A host swap area on an NVMe device; slower than DRAM but can hold reclaimable pages.
+- **p50 / p99 / p99.9:** Latency percentiles: median, 99th percentile, and 99.9th percentile.
+- **Page:** A fixed-size unit of memory managed by operating systems; commonly 4 KiB on x86-64, though other sizes are possible.
+- **Page cache:** Linux memory used to hold file data and related cached contents.
+- **Pressure VM:** A VM whose growing, filled region adds memory demand; it is not the fio measurement target.
+- **QEMU RSS:** Resident set size of the host process running a VM domain. It is not the guest's per-process RSS.
+- **Reclaim:** The kernel process of freeing or reusing physical pages, including by swapping eligible pages out.
+- **Swap-in / swap-out:** Reading a swapped page back into memory / moving an eligible memory page to swap.
+- **Tail latency:** The slow end of an operation-latency distribution, often summarized by p99 or p99.9.
+- **tmpfs:** A Linux filesystem whose files are kept in virtual memory and may use swap.
+- **Working set:** The pages a workload actively uses over a relevant time interval.
